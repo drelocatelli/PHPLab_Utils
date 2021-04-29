@@ -1,0 +1,40 @@
+ <div id="menu">
+  <ul id="submenu">
+   <li><a href="#">Página Inicial</a></li>
+   <li><a href="#">Sobre</a></li>
+   <li><a href="javascript:void(0);">Serviços ></a>
+    <ul>
+    <li><a href="#">Serviço 1</a></li>
+    <li><a href="#">Serviço 2</a></li>
+    </ul>
+   </li>
+   <li><a href="javascript:void(0);">Serviços ></a>
+    <ul>
+    <li><a href="#">Serviço 1</a></li>
+    <li><a href="#">Serviço 2</a></li>
+    </ul>
+   </li>
+   </ul> <!-- submenu -->
+  </div> <!-- menu submenu -->
+<style type="text/css">
+/* menu */
+
+#menu{}
+
+#menu li{list-style:none; display:inline; margin-right:12px;}
+
+#menu li a{color:blue; text-decoration:none;}
+
+#menu li a:visited{color:blue;}
+
+#menu, ul#submenu{padding:0; margin:0;} /* CSS reset do ul */
+
+/* submenu */
+#submenu ul li {float: none; display: block; left:-26px;}
+#submenu li{float:left; position:relative;}
+
+#submenu ul {visibility: hidden; position: fixed;}
+#submenu li:hover> ul {visibility: visible; margin: 12px 0 0; transition:all 0.2s; opacity: 0.9; position: fixed;    background: #f5f5f5;}
+
+#submenu li a {padding-bottom: 30px;}
+</style>
