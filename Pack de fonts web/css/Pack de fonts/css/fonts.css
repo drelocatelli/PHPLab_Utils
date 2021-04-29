@@ -1,0 +1,19 @@
+/*
+
+Pack de fonts web com: Lato.ttf, Montserrat.ttf, OpenSans.tff, PT_Sans.ttf, Raleway.ttf
+
+[TUTORIAL]
+Cole este arquivo dentro da pasta 'css/'
+
+*/
+
+@font-face {font-family: Lato; src: url('../fonts/Lato.ttf'); }
+@font-face {font-family: Montserrat; src: url('../fonts/Montserrat.ttf'); }
+@font-face {font-family: OpenSans; src: url('../fonts/OpenSans.ttf'); }
+@font-face {font-family: PT Sans; src: url('../fonts/PT_Sans.ttf'); }
+@font-face {font-family: Raleway; src: url('../fonts/Raleway.ttf'); }
+
+body{
+	font-size: 18px;
+	line-height: 150%;
+}

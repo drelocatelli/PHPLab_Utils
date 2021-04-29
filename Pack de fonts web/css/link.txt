@@ -1,0 +1,2 @@
+<!-- Pack de fonts web com: Lato.ttf, Montserrat.ttf, OpenSans.tff, PT_Sans.ttf, Raleway.ttf -->
+	 <link rel="stylesheet" href="https://docs.google.com/uc?export=download&id=1fy2RD371Sldf1cqedqURYyRMmCYsc8Is">

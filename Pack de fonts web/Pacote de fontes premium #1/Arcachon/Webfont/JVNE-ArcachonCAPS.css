@@ -1,0 +1,12 @@
+/* Webfont: JVNE-ArcachonCAPSRegular */@font-face {
+    font-family: 'JVNE-ArcachonCAPS';
+    src: url('JVNE-ArcachonCAPS.eot'); /* IE9 Compat Modes */
+    src: url('JVNE-ArcachonCAPS.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('JVNE-ArcachonCAPS.woff') format('woff'), /* Modern Browsers */
+         url('JVNE-ArcachonCAPS.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('JVNE-ArcachonCAPS.svg#JVNE-ArcachonCAPSRegular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

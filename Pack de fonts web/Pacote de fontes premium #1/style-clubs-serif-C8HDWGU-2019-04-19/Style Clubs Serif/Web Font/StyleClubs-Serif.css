@@ -1,0 +1,12 @@
+/* Webfont: StyleClubs-Serif */@font-face {
+    font-family: 'StyleClubs';
+    src: url('StyleClubs-Serif.eot'); /* IE9 Compat Modes */
+    src: url('StyleClubs-Serif.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('StyleClubs-Serif.woff') format('woff'), /* Modern Browsers */
+         url('StyleClubs-Serif.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('StyleClubs-Serif.svg#StyleClubs-Serif') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
