@@ -48,25 +48,27 @@
             echo $mensagem . '<br>';
 
         }
-        
-    ?>
-
-    <?php
+ 
 
         # Mostra arquivos na pasta
 
         $dir = "arquivos/";
         $dirFiles = scandir($dir);
 
-        if($dirFiles != ".." or $dirFiles != "."){
-            $dirFiles = join("<br>",$dirFiles);
+        echo '<br>';
+        echo "Arquivos:<br>";
+
+
+        foreach($dirFiles as $file){
+            if($file == '..' or $file == '.'){
+                $file = '';
+            }else{
+                $file = "<a href='arquivos/$file'>$file</a>";
+                echo $file.'<br>';
+            }
             
-            echo '<br>';
-            echo "Arquivos:<br>";
-
-            echo "<a href='arquivos/$dirFiles'>$dirFiles</a>";
         }
-
+       
     
 
     ?>

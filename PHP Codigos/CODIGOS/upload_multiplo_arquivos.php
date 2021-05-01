@@ -51,23 +51,27 @@
             }
 
         }
-        
-    ?>
-
-    <?php
-
+            
         # Mostra arquivos na pasta
 
         $dir = "arquivos/";
         $dirFiles = scandir($dir);
 
-        $dirFiles = join("<br>",$dirFiles);
-
-
         echo '<br>';
-        echo "Arquivos:<br>". $dirFiles;
+        echo "Arquivos:<br>";
 
 
+        foreach($dirFiles as $file){
+            if($file == '..' or $file == '.'){
+                $file = '';
+            }else{
+                $file = "<a href='arquivos/$file'>$file</a>";
+                echo $file.'<br>';
+            }
+                
+        }
+       
+    
     ?>
 
     
