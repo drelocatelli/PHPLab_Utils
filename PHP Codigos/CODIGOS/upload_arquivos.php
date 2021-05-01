@@ -58,12 +58,16 @@
         $dir = "arquivos/";
         $dirFiles = scandir($dir);
 
-        $dirFiles = join("<br>",$dirFiles);
+        if($dirFiles != ".." or $dirFiles != "."){
+            $dirFiles = join("<br>",$dirFiles);
+            
+            echo '<br>';
+            echo "Arquivos:<br>";
 
+            echo "<a href='arquivos/$dirFiles'>$dirFiles</a>";
+        }
 
-        echo '<br>';
-        echo "Arquivos:<br>". $dirFiles;
-
+    
 
     ?>
 
