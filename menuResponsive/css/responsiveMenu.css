@@ -1,0 +1,49 @@
+body{padding:0; margin:0;}
+
+:root{
+	--pdTopMenu:10px 22px 0 0;
+}
+
+.container{margin:0 35px;}
+
+.navbar li{list-style: none;}
+.navbar a,.navbar a:hover{text-decoration: none;}
+
+.navbar .toggle{display:block; margin-left:auto; font-size: 40px; font-weight: bold;
+padding:var(--pdTopMenu); font-family: times new roman, serif; cursor: pointer; background: 0; border: 0; outline: 0; color:#ccc;
+}
+.navbar .toggle:nth-child(2){display: none; font-family: verdana,sans-serif; font-size: 30px;}
+
+.navbar .linkMenu{display: none;}
+.navbar .clear{clear: both;}
+.navbar .toggled{padding-bottom: 6px;}
+
+
+@media(max-width: 900px){
+	.navbar li{margin:0!important;}
+	.navbar .container{margin:0 auto;}
+}
+
+@media(min-width: 901px){
+	.navbar .linkMenu{display: block!important;}
+	.navbar .toggle{display: none!important}
+	.navbar li{display: inline-block;}
+	.navbar .toggle{display: none;}
+}
+
+
+/* estilo */
+.navbar.style{font-family: verdana;}
+.navbar.style .toggle{color:#000;}
+@media(max-width: 900px){
+.navbar.style .container li{}
+.navbar.style li{ padding: 10px 0 6px; font-size: 18px;}
+.navbar.style li:last-child{padding-bottom: 20px;}
+.navbar.style li a{padding: 0 15px; color: #000; display: block; width: 100%;}
+}
+
+@media(min-width: 901px){
+.navbar.style{padding:15px 0;}
+.navbar.style li{padding-left: 6px;}
+.navbar.style li a{color:#000; font-size: 16px; font-weight: normal;}
+}
