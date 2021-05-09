@@ -22,17 +22,17 @@ class PDOController extends PDO {
 
         foreach ($parameters as $key => $value) {
 
-            $this->bindValue($key, $value);
+            $this->setParam($key, $value);
             
         }
         
     }
 
-    // private function setParam($statement, $key, $value) {
+    private function setParam($statement, $key, $value) {
 
-    //     $statement->bindParam($key, $value);
+        $statement->bindParam($key, $value);
         
-    // }
+    }
 
     public function query($rawQuery, $params = array()) {
 
