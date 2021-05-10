@@ -4,7 +4,7 @@ require_once("../Autoload.php");
 
 $sql = new PDOController();
 
-if(count($_POST) > 0){
+if(count($_POST) > 0 AND if(isset($_GET['id']))){
 
     $loguin = $_POST['loguin'];
     $senha = $_POST['senha'];
