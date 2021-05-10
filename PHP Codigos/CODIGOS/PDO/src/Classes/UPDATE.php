@@ -11,6 +11,6 @@ echo 'Selecione o usuario:<br>';
 foreach($result as $usuario){
 ?>
 
-<a href="UpdateController.php?id=<?=$usuario['id'];?>"><?=$usuario['user'];?></a>
+<a href="UpdateController.php?id=<?=$usuario['id'];?>"><?=$usuario['user'];?></a><br>
 
 <? } ?>

@@ -46,9 +46,9 @@ class PDOController extends PDO {
 
     }
 
-    public function select($rawQuery) { 
+    public function select($rawQuery, $params = array()) { 
 
-        $stmt = $this->query($rawQuery);
+        $stmt = $this->query($rawQuery, $params);
 
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
 

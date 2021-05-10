@@ -15,12 +15,16 @@ if(count($_POST) > 0){
 
 }
 
+$result = $sql->select("SELECT * from tb_usuarios WHERE id = :loguins", array(":loguins" => $_GET['id']));
+
+foreach($result as $usuario){}
+
 ?>
 
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <form method="post">
-    <input type="text" name="loguin"><br>    
-    <input type="password" name="senha" placeholder="****"><br><br>
+    <input type="text" name="loguin" value="<?= $usuario['user']; ?>"><br>    
+    <input type="password" name="senha" placeholder="****" value="<?= $usuario['pass']; ?>"><br><br>
     <button type="submit">Salvar</button>
 </form>
     
