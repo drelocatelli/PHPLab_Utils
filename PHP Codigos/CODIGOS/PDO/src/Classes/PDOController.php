@@ -2,7 +2,7 @@
 
 class PDOController extends PDO {
     
-    private $conn;
+    public $conn;
 
     public function __construct() {
 
@@ -46,9 +46,9 @@ class PDOController extends PDO {
 
     }
 
-    public function select($rawQuery, $params = array()) { 
+    public function select($rawQuery) { 
 
-        $stmt = $this->query($rawQuery, $params);
+        $stmt = $this->query($rawQuery);
 
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
 
