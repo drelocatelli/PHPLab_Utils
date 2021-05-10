@@ -9,11 +9,11 @@ if(count($_POST) > 0){
     $loguin = $_POST['loguin'];
     $senha = $_POST['senha'];
         
-    $sql->query(" UPDATE tb_usuarios SET(user=:loguin,  pass=:senha)", array(":loguin" => $loguin, ":senha" => $senha));
+    $sql->query(" UPDATE tb_usuarios SET(user=:loguin,  pass=:senha) WHERE id=:loguins ", array(":loguin" => $loguin, ":senha" => $senha, ":loguins" => $_POST['loguins']));
 
 }
 
-$usuarios = $sql->select("SELECT * from tb_usuarios ORDER BY id DESC");
+$result = $sql->select("SELECT * from tb_usuarios ORDER BY id DESC");
 
 ?>
 
@@ -22,10 +22,10 @@ $usuarios = $sql->select("SELECT * from tb_usuarios ORDER BY id DESC");
     Selecione o loguin que deseja alterar: <br>
     <select name="loguins">
     <?php
-        foreach($usuarios as $usuario){
+        foreach($result as $usuario){
             $row = $usuario;
     ?>
-        <option value="<?= $row['user']; ?>"><?= $row['user']; ?></option>
+        <option value="<?= $row['id']; ?>"><?= $row['user']; ?></option>
     <?php } ?>
     </select>
     <br><br>
