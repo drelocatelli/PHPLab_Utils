@@ -4,6 +4,7 @@ $_POST['login'] = preg_replace('/[^[:alpha:]_]/', '',$_POST['login']);
 
 OUTROS MEIOS:
 $email = stripslashes($_POST['email']); // remove barras invertidas
+$email = scapeshellcmd($_POST['email']);
 $email = strip_tags($email); // apaga tags html
 $email = mysqli_real_escape_string($db_conx, $email);
 $email = htmlspecialchars($email);
